@@ -1,3 +1,3 @@
-# Repro
+# Repro Zed Prettier ignore patterns
 
-This is a collection of demos reproducing various bugs, separated into branches.
+`package.json` is ignored by `.prettierignore`, but it's still being formatted by Zed's formatting feature, assumed to be Prettier.
