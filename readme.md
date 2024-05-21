@@ -1,3 +1,19 @@
-# Repro
+# Repro ESLint v9 inspect config
 
-This is a collection of demos reproducing various bugs, separated into branches.
+Manage Node versions with [n](https://github.com/tj/n):
+
+```
+n auto
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Try to inspect config:
+
+```
+npx eslint --inspect-config
+```
