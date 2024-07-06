@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist",
+    "module": "NodeNext"
+  },
+  "include": ["app/server.tsx", "app/Home.tsx"]
+}

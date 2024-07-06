@@ -1,3 +1,6 @@
-# Repro
+# An example Express app with React and webpack
 
-This is a collection of demos reproducing various bugs, separated into branches.
+```
+npm install
+npm run dev
+```
