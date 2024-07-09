@@ -1,3 +1,6 @@
-# Repro
+# React Testing Library + Vitest
 
-This is a collection of demos reproducing various bugs, separated into branches.
+```
+npm install
+npm test
+```
