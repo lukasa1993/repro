@@ -5,5 +5,5 @@
     "outDir": "dist",
     "module": "NodeNext"
   },
-  "include": ["app/server.tsx", "app/Home.tsx"]
+  "include": ["app/server.tsx"]
 }

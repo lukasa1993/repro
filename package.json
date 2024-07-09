@@ -5,29 +5,42 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "tsx watch --clear-screen=false app/server.tsx",
-    "build": "webpack --mode production && tsc --project tsconfig.ssr.json"
+    "dev": "cross-env NODE_ENV=development tsx watch --clear-screen=false app/server.tsx",
+    "build": "cross-env NODE_ENV=production && rimraf dist && cpy 'public/*' dist/client && webpack && tsc --project tsconfig.ssr.json",
+    "start": "node dist/app/server.js"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.19.2",
+    "morgan": "^1.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@types/compression": "^1.7.5",
     "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/webpack-hot-middleware": "^2.25.9",
     "autoprefixer": "^10.4.19",
+    "cpy-cli": "^5.0.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
     "postcss-loader": "^8.1.1",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
+    "rimraf": "^5.0.8",
     "style-loader": "^4.0.0",
     "tailwindcss": "^3.4.4",
     "ts-loader": "^9.5.1",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3",
     "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-middleware": "^7.2.1",
+    "webpack-hot-middleware": "^2.26.1"
   }
 }
