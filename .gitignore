@@ -1,4 +1,5 @@
 node_modules
 build
+.react-router/
 prisma/data.db
 prisma/data.db-journal
