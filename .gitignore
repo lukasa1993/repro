@@ -1,0 +1,4 @@
+node_modules
+build
+prisma/data.db
+prisma/data.db-journal

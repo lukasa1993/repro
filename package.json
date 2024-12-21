@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "npm install && prisma generate && prisma migrate deploy",
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc --noEmit"
+  },
+  "dependencies": {
+    "@epic-web/remember": "^1.1.0",
+    "@prisma/client": "^6.1.0",
+    "@react-router/node": "^7.1.0",
+    "@react-router/serve": "^7.1.0",
+    "isbot": "^5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.0"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.1.0",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "prisma": "^6.1.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
