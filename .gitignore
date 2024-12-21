@@ -1,0 +1,4 @@
+node_modules
+dist
+prisma/data.db
+prisma/data.db-journal
